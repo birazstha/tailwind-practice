@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.link-hover {
+    @apply transition-colors delay-75 ease-in-out hover:text-secondary;
+}
+
+.service-box {
+    @apply h-[293.07px] bg-[#00447B] text-center p-4 rounded-[7px] text-white flex flex-col justify-center items-center transform duration-300 transition-transform hover:scale-110 cursor-pointer
+}
