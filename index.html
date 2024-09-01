@@ -11,55 +11,59 @@
 </head>
 
 <body>
-    <div class="mx-auto md:w-[1200px] 2xl:w-[1400px] p-5">
-        <!-- Menu Start -->
-        <nav class="flex justify-between py-5 items-center">
-            <a href="" class="w-1/5">
-                <img src="./asset/images/logo.png" alt="Logo">
-            </a>
+    <!-- Menu Start -->
+    <nav class="flex justify-between items-center">
+        <a href="" class="w-1/5">
+            <img src="./asset/images/logo.png" alt="Logo">
+        </a>
+        <div class="flex items-center">
+            <ul
+                class="flex absolute md:static bg-secondary md:bg-white md:min-h-fit min-h-[60vh] left-0 top-[9%] w-full md:w-auto md:flex-row flex-col p-5 gap-5 text-white md:text-primary font-lemon">
+                <li><a href="#home" class="link-hover">HOME</a></li>
+                <li><a href="#about-us" class="link-hover">ABOUT US</a></li>
+                <li><a href="#services" class="link-hover">SERVICES</a></li>
+                <li><a href="#our-work" class="link-hover">OUR WORK</a></li>
+                <li><a href="#careers" class="link-hover">CAREERS</a></li>
+            </ul>
 
-            <div class="flex items-center gap-10">
-                <ul class="flex gap-5 text-primary font-lemon">
-                    <li><a href="#home" class="link-hover">HOME</a></li>
-                    <li><a href="#about-us" class="link-hover">ABOUT US</a></li>
-                    <li><a href="#services" class="link-hover">SERVICES</a></li>
-                    <li><a href="#our-work" class="link-hover">OUR WORK</a></li>
-                    <li><a href="#careers" class="link-hover">CAREERS</a></li>
-                </ul>
+            <div class="flex items-center gap-5">
                 <button
                     class="bg-secondary text-white p-2 rounded-[5px] transition-colors duration-110 hover:bg-[#3886c5]">
                     Get In Touch
                 </button>
-            </div>
-        </nav>
-        <!-- Menu Ends -->
+                <ion-icon name="menu" class="text-3xl block md:hidden" onclick="toggleMenu(this)"></ion-icon>
 
-        <!-- Landing Page Start -->
-        <section class="flex flex-col-reverse md:flex-row 2xl:flex-row items-center" id="home">
-            <div class="flex-1">
-                <h1 class="text-5xl text-secondary mb-[20px] font-bold font-nexa">Innovating the Future of Technology
-                </h1>
-                <p class="font-nexa font-bold text-justify">Lorem ipsum dolor sit amet consectetur. Amet posuere porta
-                    turpis risus
-                    malesuada
-                    ut. Est habitant
-                    cras
-                    hendrerit tortor non massa integer sit adipiscing. Facilisi sagittis vulputate hendrerit urna sed.
-                </p>
             </div>
-            <div class="flex-1">
-                <img src="./asset/images/slider-1.png" alt="" class="w-full h-full object-cover">
-            </div>
+        </div>
+    </nav>
+    <!-- Menu Ends -->
 
-        </section>
-        <!-- Landing Page Ends -->
-    </div>
+    <!-- Landing Page Start -->
+    <section class="container flex flex-col-reverse md:flex-row 2xl:flex-row items-center" id="home">
+        <div class="flex-1">
+            <h1 class="text-5xl text-secondary mb-[20px] font-bold font-nexa">Innovating the Future of Technology
+            </h1>
+            <p class="font-nexa font-bold text-justify">Lorem ipsum dolor sit amet consectetur. Amet posuere porta
+                turpis risus
+                malesuada
+                ut. Est habitant
+                cras
+                hendrerit tortor non massa integer sit adipiscing. Facilisi sagittis vulputate hendrerit urna sed.
+            </p>
+        </div>
+        <div class="flex-1">
+            <img src="./asset/images/slider-1.png" alt="" class="w-full h-full object-cover">
+        </div>
+
+    </section>
+    <!-- Landing Page Ends -->
 
     <!-- About Page Start -->
-    <section class="bg-[#EAF5FE] py-[20px]" id="about-us">
-        <div class="mx-auto md:w-[1200px] 2xl:w-[1400px] flex flex-col 2xl:flex-row md:flex-row p-[20px]">
+    <section class="full-container" id="about-us">
+        <div class="mx-auto md:w-[1200px] 2xl:w-[1400px] flex flex-col 2xl:flex-row md:flex-row p-[20px] gap-10">
             <div class="flex-1">
-                <img src="./asset/images/about-us.png" class="h-auto w-[520px] object-cover" alt="About Page Image">
+                <img src="./asset/images/about-us.png" class="h-auto md:w-[520px] 2xl:w-full object-cover"
+                    alt="About Page Image">
             </div>
             <div class="flex-1 flex flex-col">
                 <div class="flex-1">
@@ -78,6 +82,7 @@
                         guarantees the successful delivery of your project.
                     </p>
                 </div>
+
                 <a href="" class="text-secondary font-bold">See more information</a>
             </div>
         </div>
@@ -85,9 +90,9 @@
     <!-- About Page Ends -->
 
     <!-- Service Starts -->
-    <section class="mx-auto md:w-[1200px] 2xl:w-[1400px] my-10">
+    <section class="container">
         <div class="text-center mb-6">
-            <h2 class="text-secondary font-bold font-lemon">SERVICES</h2>
+            <h2 class="text-secondary font-bold font-lemon">The J</h2>
             <h1 class="text-3xl font-nexa font-bold">Tailored Solutions for <span class="text-primary">Your Needs</span>
             </h1>
         </div>
@@ -126,7 +131,7 @@
     <!-- Service Ends -->
 
     <!-- Technology Start -->
-    <section class="bg-[#EAF5FE] py-[50px]" id="about-us">
+    <section class="full-container" id="about-us">
         <div class="text-center mb-6 leading-10">
             <h2 class="text-secondary font-bold font-lemon">Technology Used</h2>
             <h1 class="text-3xl font-nexa font-bold">Powered by Leading <span class="text-primary">Technologies</span>
@@ -135,17 +140,90 @@
 
         <div
             class="mx-auto md:w-[1200px] 2xl:w-[1400px] p-[20px] grid grid-cols-1 md:grid-cols-5 2xl:grid-cols-5 gap-[80px] place-items-center">
-            <img src="./asset/technologies/laravel.png" alt="" class="h-[80px] w-auto">
-            <img src="./asset/technologies/PHP.png" alt="" class="h-[80px] w-auto">
-            <img src="./asset/technologies/oddo.png" alt="" class="h-[80px] w-auto">
-            <img src="./asset/technologies/Node.png" alt="" class="h-[80px] w-auto items-center">
-            <img src="./asset/technologies/Python.png" alt="" class="h-[80px] w-auto">
-            <img src="./asset/technologies/react.png" alt="" class="h-[80px] w-auto">
-            <img src="./asset/technologies/SAP.png" alt="" class="h-[80px] w-auto">
-            <img src="./asset/technologies/sql.png" alt="" class="h-[80px] w-auto">
+            <div class="hover:scale-125 duration-200 cursor-pointer ease-in-out">
+                <img src="./asset/technologies/1.png" alt="" class="h-[80px] w-auto ">
+            </div>
+
+            <div class="hover:scale-125 duration-200 cursor-pointer ease-in-out">
+                <img src="./asset/technologies/2.png" alt="" class="h-[80px] w-auto">
+            </div>
+
+            <div class="hover:scale-125 duration-200 cursor-pointer ease-in-out">
+                <img src="./asset/technologies/3.png" alt="" class="h-[80px] w-auto">
+            </div>
+
+            <div class="hover:scale-125 duration-200 cursor-pointer ease-in-out">
+                <img src="./asset/technologies/4.png" alt="" class="h-[80px] w-auto items-center">
+            </div>
+
+            <div class="hover:scale-125 duration-200 cursor-pointer ease-in-out">
+                <img src="./asset/technologies/5.png" alt="" class="h-[80px] w-auto">
+            </div>
+
+            <div class="hover:scale-125 duration-200 cursor-pointer ease-in-out">
+                <img src="./asset/technologies/6.png" alt="" class="h-[80px] w-auto">
+            </div>
+
+            <div class="hover:scale-125 duration-150 ease-in-out">
+                <img src="./asset/technologies/7.png" alt="" class="h-[80px] w-auto">
+            </div>
+
+            <div class="hover:scale-125 duration-150 ease-in-out">
+                <img src="./asset/technologies/8.png" alt="" class="h-[80px] w-auto">
+            </div>
+
+
         </div>
     </section>
     <!-- Technology Ends -->
+
+    <section class="container">
+        <div class="text-center flex gap-2 flex-col">
+            <h2 class="text-secondary font-bold font-lemon uppercase">The Journey to Success</h2>
+            <h1 class="text-3xl font-nexa font-bold  text-secondary">Turning Ideas into Reality,<span
+                    class="text-primary">One Step at
+                    a Time</span>
+            </h1>
+        </div>
+
+        <div class="grid grid-cols-4 gap-5 mt-5">
+            <div class="process-box flex flex-col gap-4">
+                <h1 class="text-5xl">01</h1>
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia doloremque sequi
+                    aperiam molestias
+                    perferendis dolores, aliquam fugit? Quod, alias non.</p>
+            </div>
+            <div class="process-box flex flex-col gap-4">
+                <h1 class="text-5xl">02</h1>
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia doloremque sequi
+                    aperiam molestias
+                    perferendis dolores, aliquam fugit? Quod, alias non.</p>
+            </div>
+            <div class="process-box flex flex-col gap-4">
+                <h1 class="text-5xl">03</h1>
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia doloremque sequi
+                    aperiam molestias
+                    perferendis dolores, aliquam fugit? Quod, alias non.</p>
+            </div>
+            <div class="process-box flex flex-col gap-4">
+                <h1 class="text-5xl">04</h1>
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia doloremque sequi
+                    aperiam molestias
+                    perferendis dolores, aliquam fugit? Quod, alias non.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script>
+        function toggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu';
+        }
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

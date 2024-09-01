@@ -10,3 +10,20 @@
 .service-box {
     @apply h-[293.07px] bg-[#00447B] text-center p-4 rounded-[7px] text-white flex flex-col justify-center items-center transform duration-300 transition-transform hover:scale-110 cursor-pointer
 }
+
+nav {
+    @apply mx-auto md:w-[1200px] 2xl:w-[1400px] py-2;
+
+}
+
+.container {
+    @apply mx-auto md:w-[1200px] 2xl:w-[1400px] py-[20px];
+}
+
+.full-container {
+    @apply bg-[#EAF5FE] py-[20px];
+}
+
+.process-box {
+    @apply bg-secondary h-[200px] bg-secondary h-[200px] bg-secondary h-[200px] bg-secondary h-[200px] p-5 rounded-sm text-white;
+}
